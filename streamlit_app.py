@@ -33,16 +33,10 @@ fig = px.bar(df, y='Atividade', x='Quantidade', title='Atividade - Quantidade',
 fig.update_layout(bargap=0.1) 
 fig.update_layout(width=1000, height=500)
 
-# Definir a localidade para português do Brasil
-locale.setlocale(locale.LC_TIME, 'pt_BR.UTF-8')
-data_atual = datetime.now()
-mes_anterior = data_atual.replace(day=1) - timedelta(days=1)
-nome_mes_anterior = mes_anterior.strftime('%B')
-
 # Exibir no Streamlit
 st.markdown(
     f"""
-    <h1 style="text-align: center;">PRODUÇÃO - SERVIÇO SOCIAL {nome_mes_anterior.upper()} 2024</h1>
+    <h1 style="text-align: center;">PRODUÇÃO - SERVIÇO SOCIAL SETEMBRO 2024</h1>
     """, unsafe_allow_html=True
 )
 
