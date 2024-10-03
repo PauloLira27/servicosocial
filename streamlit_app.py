@@ -25,7 +25,7 @@ dados = {
 df = pd.DataFrame(list(dados.items()), columns=['Atividade', 'Quantidade'])
 df = df.sort_values(by='Quantidade', ascending=True)
 
-fig = px.bar(df, y='Atividade', x='Quantidade', title='Atividade - Quantidade',
+fig = px.bar(df, y='Atividade', x='Quantidade', title='SERVIÇO SOCIAL - SETEMBRO 2024',
              labels={'Atividade': 'Atividade', 'Quantidade': 'Quantidade'},
              text_auto=True)  # Adicionar os valores nas barras
 
